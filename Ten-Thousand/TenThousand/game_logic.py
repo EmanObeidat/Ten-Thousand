@@ -56,6 +56,13 @@ class GameLogic:
    
 if __name__ == '__main__':
     print(GameLogic.calculate_score([3, 3, 3, 5, 2, 4]))
+    print(GameLogic.calculate_score([3, 3, 3, 2, 2, 2]))
+    print(GameLogic.calculate_score([3, 3, 3, 3, 3, 3]))
+    print(GameLogic.calculate_score([1, 5, 5, 5, 5, 5]))
+    print(GameLogic.calculate_score([3, 3, 4, 4, 5, 5]))
+    print(GameLogic.calculate_score([3, 3, 4, 4, 5, 5]))
+    print(GameLogic.calculate_score([1, 3, 4, 4, 5, 1]))
+
 
 
 

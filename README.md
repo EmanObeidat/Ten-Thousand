@@ -2,9 +2,10 @@
 
 ## Author:
 ```
-Eman Obeidat 
-Walaa alrefai
-Mohammad al sa'd
+Mohammad al sa'd "Driver"
+Eman Obeidat "Navigator"
+Walaa alrefai "Navigator"
+
 ```
 ```
 requirements: pip install pytest
