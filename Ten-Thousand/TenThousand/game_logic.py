@@ -53,25 +53,7 @@ class GameLogic:
                 if count[0][1] == 3 and count[1][1] == 3:
                     score = 1200
         return score
-    @staticmethod
-    def get_scorers(dice):
-        # help from my Bhagirath Bhatt
-        scoring_dice = GameLogic.calculate_score(dice)
-        scorers = []
-        if scoring_dice:
-            for i in range(len(dice)):
-                sub_roll = dice[:i] + dice[i + 1:]
-                sub_score = GameLogic.calculate_score(sub_roll)
-                if sub_score != scoring_dice:
-                    scorers.append(dice[i])
-        return tuple(scorers)
-    @staticmethod
-    def print_dice(roll):
-        string = ""
-        for dice in roll:
-            string += f"{str(dice)}"
-            string += ""
-        return string
+   
 if __name__ == '__main__':
     print(GameLogic.calculate_score([3, 3, 3, 5, 2, 4]))
 
