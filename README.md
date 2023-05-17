@@ -22,3 +22,19 @@ pytest
 ```
 
 ## ChatGPT : [chatgpt](./Ten-Thousand/TenThousand/ChatGpt.md)
+
+
+# Version 2
+# Author:
+```
+Eman Obeidat: driver
+Wala'a refai: navigator
+Mohammad Alsa'd: navigator
+```
+
+```
+We add some functionality like rolling, banking and quiting. We did depandency injection.
+This code allow user to set a side dice each roll Application should allow “banking” current score or rolling again. 
+```
+
+
