@@ -53,7 +53,12 @@ class GameLogic:
                 if count[0][1] == 3 and count[1][1] == 3:
                     score = 1200
         return score
-   
+    @staticmethod
+    def validate_keepers(roll, keepers):
+        keeper_counter = Counter(keepers)
+        roll_counter = Counter(roll)
+        result = keeper_counter - roll_counter
+        return not result
 if __name__ == '__main__':
     print(GameLogic.calculate_score([3, 3, 3, 5, 2, 4]))
     print(GameLogic.calculate_score([3, 3, 3, 2, 2, 2]))

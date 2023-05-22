@@ -4,11 +4,7 @@
 ```
 Mohammad al sa'd "Driver"
 Eman Obeidat "Navigator"
-Walaa alrefai "Navigator"
-
-```
-```
-requirements: pip install pytest
+Walaa auirements: pip install pytest
 ```
 ## How to initialize/run your application ?
 ```
@@ -37,4 +33,12 @@ We add some functionality like rolling, banking and quiting. We did depandency i
 This code allow user to set a side dice each roll Application should allow “banking” current score or rolling again. 
 ```
 
-
+# Version 3
+```
+Eman Obeidat: driver
+Wala'a refai: navigator
+Mohammad Alsa'd: navigator
+```
+```
+We add two methods, "check_cheater" which return cheater sentences when enter dice out of exist and "zilch" which check rolled dice vs score sheet, if score sheet = 0 run zilch
+```
