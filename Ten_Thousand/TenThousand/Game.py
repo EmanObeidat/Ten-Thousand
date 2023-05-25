@@ -1,6 +1,6 @@
 import sys
-from banker import Banker
-from game_logic import GameLogic
+from Ten_Thousand.TenThousand.banker import Banker
+from Ten_Thousand.TenThousand.game_logic import GameLogic
 from collections import Counter
 class Game:
     def __init__(self, num_rounds=20):
@@ -104,6 +104,7 @@ class Game:
     def game_end(self):
         print(f"Thanks for playing. You earned {self.banker.balance} points")
         sys.exit()
+        
 if __name__ == "__main__":
     game = Game()
     game.play()

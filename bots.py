@@ -5,8 +5,8 @@ at same level as pyproject.toml
 from abc import ABC, abstractmethod
 import builtins
 import re
-from TenThousand.Game import Game
-from TenThousand.game_logic import GameLogic
+from Ten_Thousand.TenThousand.Game import Game
+from Ten_Thousand.TenThousand.game_logic import GameLogic
 
 
 class BaseBot(ABC):
@@ -129,25 +129,27 @@ class BaseBot(ABC):
         )
 
 
-class NervousNellie(BaseBot):
-    """NervousNellie banks the first roll always"""
+class muhammad(BaseBot):
+    """Muhammad banks the first roll always"""
 
     def _roll_bank_or_quit(self):
         return "b"
 
 
-class myBot(BaseBot):
+class Botimus_Prime(BaseBot):
     def _roll_bank_or_quit(self):
+
         """your logic here"""
         if self.dice_remaining > 300: 
             return 'r'
             
         return 'b'
-
+        
+                    
     def _enter_dice(self):
         """simulate user entering which dice to keep.
         Defaults to all scoring dice"""
-
+        
         dice_index = []
         # checks for 1's and 5's
         def dice_check(list):
@@ -178,5 +180,5 @@ class myBot(BaseBot):
 
 if __name__ == "__main__":
     num_games = 100
-    NervousNellie.play(num_games)
-    myBot.play(num_games)
+    muhammad.play(num_games)
+    Botimus_Prime.play(num_games)
