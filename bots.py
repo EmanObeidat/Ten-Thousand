@@ -129,14 +129,14 @@ class BaseBot(ABC):
         )
 
 
-class myBot(BaseBot):
+class NervousNellie(BaseBot):
     """myBot banks the first roll always"""
 
     def _roll_bank_or_quit(self):
         return "b"
 
 
-class NervousNellie(BaseBot):
+class myBot(BaseBot):
     def _roll_bank_or_quit(self):
 
         """your logic here"""
