@@ -136,7 +136,7 @@ class muhammad(BaseBot):
         return "b"
 
 
-class Botimus_Prime(BaseBot):
+class NervousNellie(BaseBot):
     def _roll_bank_or_quit(self):
 
         """your logic here"""
@@ -181,4 +181,4 @@ class Botimus_Prime(BaseBot):
 if __name__ == "__main__":
     num_games = 100
     muhammad.play(num_games)
-    Botimus_Prime.play(num_games)
+    NervousNellie.play(num_games)
