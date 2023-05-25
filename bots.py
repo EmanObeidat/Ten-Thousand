@@ -129,8 +129,8 @@ class BaseBot(ABC):
         )
 
 
-class muhammad(BaseBot):
-    """Muhammad banks the first roll always"""
+class myBot(BaseBot):
+    """myBot banks the first roll always"""
 
     def _roll_bank_or_quit(self):
         return "b"
@@ -180,5 +180,5 @@ class NervousNellie(BaseBot):
 
 if __name__ == "__main__":
     num_games = 100
-    muhammad.play(num_games)
+    myBot.play(num_games)
     NervousNellie.play(num_games)
