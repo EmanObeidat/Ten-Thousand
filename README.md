@@ -44,8 +44,8 @@ We add two methods, "check_cheater" which return cheater sentences when enter di
 ```
 # Version 4
 ```
-Eman Obeidat: driver
-Wala'a refai: navigator
+Eman Obeidat: navigator
+Wala'a refai: driver
 Mohammad Alsa'd: navigator
 ```
 ```
