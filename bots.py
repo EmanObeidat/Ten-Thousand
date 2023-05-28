@@ -152,30 +152,30 @@ class myBot(BaseBot):
         """simulate user entering which dice to keep.
         Defaults to all scoring dice"""
         
-        dice_index = []
-        # checks for 1's and 5's
-        def dice_check(list):
-            # if 1 then check for 5's as well
-            if 1 in self.last_roll:
-                # if 5's then add both ones and 5's to list
-                if 5 in self.last_roll:
-                    for index in range(len(self.last_roll)):
-                        if self.last_roll[index] == 1:
-                            list.append(index)
-                        if self.last_roll[index] == 5:
-                            list.append(index)
-                else:
-                    # only add 1's if no 5's in list
-                    for index in range(len(self.last_roll)):
-                        if self.last_roll[index] == 1:
-                            list.append(index)
-            # if 5's in list by itself, append only the 5's location
-            elif 5 in self.last_roll:
-                for index in range(len(self.last_roll)):
-                    if self.last_roll[index] == 5:
-                        list.append(index)
+        # dice_index = []
+        # # checks for 1's and 5's
+        # def dice_check(list):
+        #     # if 1 then check for 5's as well
+        #     if 1 in self.last_roll:
+        #         # if 5's then add both ones and 5's to list
+        #         if 5 in self.last_roll:
+        #             for index in range(len(self.last_roll)):
+        #                 if self.last_roll[index] == 1:
+        #                     list.append(index)
+        #                 if self.last_roll[index] == 5:
+        #                     list.append(index)
+        #         else:
+        #             # only add 1's if no 5's in list
+        #             for index in range(len(self.last_roll)):
+        #                 if self.last_roll[index] == 1:
+        #                     list.append(index)
+        #     # if 5's in list by itself, append only the 5's location
+        #     elif 5 in self.last_roll:
+        #         for index in range(len(self.last_roll)):
+        #             if self.last_roll[index] == 5:
+        #                 list.append(index)
                         
-            return str(list)
+        #     return str(list)
 
         return super()._enter_dice()
 
