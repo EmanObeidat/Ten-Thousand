@@ -140,10 +140,12 @@ class myBot(BaseBot):
     def _roll_bank_or_quit(self):
 
         """your logic here"""
-        if self.dice_remaining > 300: 
-            return 'r'
-            
-        return 'b'
+        if self.unbanked_points >= 300:
+            return "b"
+        if self.dice_remaining >= 3:
+            return "r"
+        else:
+            return "b"
         
                     
     def _enter_dice(self):
@@ -180,5 +182,6 @@ class myBot(BaseBot):
 
 if __name__ == "__main__":
     num_games = 100
-    myBot.play(num_games)
     NervousNellie.play(num_games)
+    myBot.play(num_games)
+    
